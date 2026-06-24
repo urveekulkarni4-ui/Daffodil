@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Daffodil Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" onclick="showPage('home')">
+        <span class="logo-flower">✿</span> The Daffodil Project
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#" onclick="showPage('home')">Home</a></li>
+        <li><a href="#" onclick="showPage('about')">About</a></li>
+        <li><a href="#" onclick="showPage('programs')">Programs</a></li>
+        <li><a href="#" onclick="showPage('donate')">Donate</a></li>
+        <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ======================== HOME PAGE ======================== -->
+  <div id="page-home" class="page active">
+
+    <section class="hero">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Wake Forest, NC</p>
+        <h1 class="hero-headline">Every person<br><em>deserves to bloom.</em></h1>
+        <p class="hero-sub">The Daffodil Project empowers women and children in underserved communities through health, education, and essential support.</p>
+        <div class="hero-actions">
+          <button class="btn-primary" onclick="showPage('donate')">Support us</button>
+          <button class="btn-ghost" onclick="showPage('about')">Our story →</button>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="daffodil-art">
+          <svg viewBox="0 0 320 380" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Stem -->
+            <path d="M160 370 Q155 300 160 240" stroke="#4A7C3F" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <!-- Leaf left -->
+            <path d="M158 310 Q120 290 110 260 Q140 270 160 290" fill="#4A7C3F" opacity="0.8"/>
+            <!-- Leaf right -->
+            <path d="M162 330 Q200 310 215 280 Q185 295 162 315" fill="#4A7C3F" opacity="0.6"/>
+            <!-- Petals -->
+            <ellipse cx="160" cy="185" rx="28" ry="55" fill="#F9E784" transform="rotate(0 160 240)"/>
+            <ellipse cx="160" cy="185" rx="28" ry="55" fill="#F9E784" transform="rotate(60 160 240)"/>
+            <ellipse cx="160" cy="185" rx="28" ry="55" fill="#F9E784" transform="rotate(120 160 240)"/>
+            <ellipse cx="160" cy="185" rx="28" ry="55" fill="#EED84A" transform="rotate(30 160 240)"/>
+            <ellipse cx="160" cy="185" rx="28" ry="55" fill="#EED84A" transform="rotate(90 160 240)"/>
+            <ellipse cx="160" cy="185" rx="28" ry="55" fill="#EED84A" transform="rotate(150 160 240)"/>
+            <!-- Corona (trumpet) -->
+            <circle cx="160" cy="240" r="32" fill="#E8A020"/>
+            <circle cx="160" cy="240" r="22" fill="#F2B830"/>
+            <circle cx="160" cy="240" r="13" fill="#E8A020"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="motto-bar">
+      <p><em>"Dum spiro spero"</em> &nbsp;—&nbsp; While I breathe, I hope.</p>
+    </section>
+
+    <section class="home-mission">
+      <h2>What we stand for</h2>
+      <div class="pillars">
+        <div class="pillar">
+          <div class="pillar-icon">♥</div>
+          <h3>Health</h3>
+          <p>Bringing accessible wellness resources and screenings to women and families who need them most.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">✦</div>
+          <h3>Education</h3>
+          <p>Workshops and mentorship that build skills, confidence, and brighter futures for women and children.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">⌂</div>
+          <h3>Shelter</h3>
+          <p>Working toward a future where every woman and child has a safe, warm place to call home.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-cta">
+      <div class="cta-box">
+        <h2>Ready to make a difference?</h2>
+        <p>Join us as a volunteer, donate, or simply spread the word. Every action plants a seed.</p>
+        <div class="cta-btns">
+          <button class="btn-primary" onclick="showPage('contact')">Volunteer with us</button>
+          <button class="btn-primary-outline" onclick="showPage('donate')">Donate today</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ======================== ABOUT PAGE ======================== -->
+  <div id="page-about" class="page">
+
+    <section class="page-hero">
+      <p class="hero-eyebrow">Our story</p>
+      <h1>Rooted in hope,<br><em>growing in community.</em></h1>
+    </section>
+
+    <section class="about-body">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>Why daffodils?</h2>
+          <p>When William Wordsworth stumbled upon a field of golden daffodils, he was wandering — lonely, lost, and without direction. But that unexpected burst of beauty stayed with him, filling his heart with joy long after the moment had passed.</p>
+          <p>That is the feeling we want to create. For every woman who feels lost, for every child who needs warmth — we want to be that unexpected field of daffodils. A moment of beauty and hope that changes everything.</p>
+          <blockquote>
+            "For oft, when on my couch I lie<br>
+            in vacant or in pensive mood,<br>
+            they flash upon that inward eye<br>
+            which is the bliss of solitude."
+            <cite>— William Wordsworth</cite>
+          </blockquote>
+        </div>
+        <div class="about-side">
+          <div class="founder-card">
+            <div class="founder-initial">U</div>
+            <div>
+              <p class="founder-name">Urvee</p>
+              <p class="founder-title">Founder, The Daffodil Project</p>
+            </div>
+          </div>
+          <p class="founder-bio">A biomedical engineering student from Wake Forest, NC with a heart for community. Urvee founded The Daffodil Project to bridge her love of health sciences with direct service to women and children in need — starting small, dreaming big.</p>
+          <div class="values-list">
+            <div class="value-item"><span class="value-dot"></span>Faith-inspired, community-driven</div>
+            <div class="value-item"><span class="value-dot"></span>Health & wellness at our core</div>
+            <div class="value-item"><span class="value-dot"></span>Built for women, by women</div>
+            <div class="value-item"><span class="value-dot"></span>Growing toward a shelter</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mission-statement">
+      <div class="mission-inner">
+        <p class="eyebrow-sm">Our mission</p>
+        <p class="mission-text">"The Daffodil Project is dedicated to empowering women and children in underserved communities through health, education, and essential support — because every person deserves warmth, hope, and a place to bloom."</p>
+        <p class="motto-sm">Dum spiro spero — While I breathe, I hope.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ======================== PROGRAMS PAGE ======================== -->
+  <div id="page-programs" class="page">
+
+    <section class="page-hero">
+      <p class="hero-eyebrow">What we do</p>
+      <h1>Programs built<br><em>with heart.</em></h1>
+    </section>
+
+    <section class="programs-body">
+      <div class="programs-grid">
+
+        <div class="program-card">
+          <div class="program-num">01</div>
+          <h3>Community drives</h3>
+          <p>We organize regular drives to collect and distribute essential goods to women and children in need — hygiene products, clothing, food, and care packages filled with warmth and dignity.</p>
+          <ul class="program-list">
+            <li>Hygiene & toiletry drives</li>
+            <li>Period product distribution</li>
+            <li>Seasonal care packages</li>
+            <li>Back-to-school supply drives</li>
+          </ul>
+        </div>
+
+        <div class="program-card">
+          <div class="program-num">02</div>
+          <h3>Health & wellness workshops</h3>
+          <p>Rooted in our founder's biomedical engineering background, our workshops bring accessible health education and screenings directly to underserved women and families.</p>
+          <ul class="program-list">
+            <li>Women's health screenings</li>
+            <li>Nutrition & wellness education</li>
+            <li>Mental health awareness</li>
+            <li>First aid & safety skills</li>
+          </ul>
+        </div>
+
+        <div class="program-card">
+          <div class="program-num">03</div>
+          <h3>Education & mentorship</h3>
+          <p>We believe education is one of the most powerful tools for lasting change. Our mentorship and workshop programs help young girls and women build skills, confidence, and hope for the future.</p>
+          <ul class="program-list">
+            <li>STEM mentorship for girls</li>
+            <li>Life skills workshops</li>
+            <li>College prep support</li>
+            <li>Literacy assistance</li>
+          </ul>
+        </div>
+
+        <div class="program-card program-card-future">
+          <div class="program-num">✦</div>
+          <h3>Future: safe shelter</h3>
+          <p>Our long-term vision is a full shelter for women and children — a warm, safe, dignified place to land. Every program we run today is a step toward making that dream real.</p>
+          <p class="future-tag">Coming in the future</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="programs-cta">
+      <h2>Want to help run a program?</h2>
+      <p>We're always looking for volunteers, workshop leaders, and community partners.</p>
+      <button class="btn-primary" onclick="showPage('contact')">Get involved →</button>
+    </section>
+
+  </div>
+
+  <!-- ======================== DONATE PAGE ======================== -->
+  <div id="page-donate" class="page">
+
+    <section class="page-hero">
+      <p class="hero-eyebrow">Support us</p>
+      <h1>Plant a seed<br><em>of hope today.</em></h1>
+    </section>
+
+    <section class="donate-body">
+      <div class="donate-grid">
+        <div class="donate-text">
+          <h2>Why your gift matters</h2>
+          <p>The Daffodil Project runs on community generosity. Every dollar goes directly toward drives, workshops, and health resources for women and children in Wake Forest and beyond.</p>
+          <div class="impact-list">
+            <div class="impact-row">
+              <div class="impact-amount">$10</div>
+              <div class="impact-desc">Supplies a hygiene kit for one woman in need</div>
+            </div>
+            <div class="impact-row">
+              <div class="impact-amount">$25</div>
+              <div class="impact-desc">Funds workshop materials for a full session</div>
+            </div>
+            <div class="impact-row">
+              <div class="impact-amount">$50</div>
+              <div class="impact-desc">Covers a health screening event for a family</div>
+            </div>
+            <div class="impact-row">
+              <div class="impact-amount">$100</div>
+              <div class="impact-desc">Sponsors a full community drive event</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="donate-form-box">
+          <p class="form-label">Choose an amount</p>
+          <div class="amount-grid">
+            <button class="amount-btn active" onclick="selectAmount(this, '10')">$10</button>
+            <button class="amount-btn" onclick="selectAmount(this, '25')">$25</button>
+            <button class="amount-btn" onclick="selectAmount(this, '50')">$50</button>
+            <button class="amount-btn" onclick="selectAmount(this, '100')">$100</button>
+          </div>
+          <input type="number" id="custom-amount" placeholder="Or enter a custom amount" class="custom-input" oninput="clearSelected()" />
+          <p class="form-label" style="margin-top:1.5rem">Your details</p>
+          <input type="text" placeholder="Full name" class="form-input" />
+          <input type="email" placeholder="Email address" class="form-input" />
+          <button class="btn-primary full-width" style="margin-top:1rem">Donate now ✿</button>
+          <p class="donate-note">The Daffodil Project is a registered 501(c)(3) nonprofit. All donations are tax-deductible.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ======================== CONTACT PAGE ======================== -->
+  <div id="page-contact" class="page">
+
+    <section class="page-hero">
+      <p class="hero-eyebrow">Say hello</p>
+      <h1>Let's grow<br><em>together.</em></h1>
+    </section>
+
+    <section class="contact-body">
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <h2>Get in touch</h2>
+          <p>Whether you want to volunteer, partner with us, pitch a program idea, or just learn more — we'd love to hear from you.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-icon">✉</span>
+              <div>
+                <p class="contact-label">Email</p>
+                <p>hello@thedaffodilproject.org</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">⌖</span>
+              <div>
+                <p class="contact-label">Location</p>
+                <p>Wake Forest, NC</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">◈</span>
+              <div>
+                <p class="contact-label">Instagram</p>
+                <p>@thedaffodilproject</p>
+              </div>
+            </div>
+          </div>
+          <div class="volunteer-box">
+            <p class="volunteer-title">Want to volunteer?</p>
+            <p>We need people to help with drives, workshops, health events, social media, and more. All skill levels welcome.</p>
+          </div>
+        </div>
+
+        <div class="contact-form-box">
+          <p class="form-label">Your name</p>
+          <input type="text" placeholder="First and last name" class="form-input" />
+          <p class="form-label">Email</p>
+          <input type="email" placeholder="your@email.com" class="form-input" />
+          <p class="form-label">I want to...</p>
+          <select class="form-input form-select">
+            <option>Volunteer</option>
+            <option>Donate or fundraise</option>
+            <option>Partner with The Daffodil Project</option>
+            <option>Pitch a program idea</option>
+            <option>Learn more</option>
+          </select>
+          <p class="form-label">Message</p>
+          <textarea class="form-input form-textarea" placeholder="Tell us a little about yourself and how you'd like to help..."></textarea>
+          <button class="btn-primary full-width" style="margin-top:1rem">Send message ✿</button>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-logo">✿ The Daffodil Project</p>
+      <p class="footer-motto"><em>Dum spiro spero</em> — While I breathe, I hope.</p>
+      <p class="footer-copy">© 2026 The Daffodil Project · Wake Forest, NC · 501(c)(3) Nonprofit</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
